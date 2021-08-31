@@ -158,7 +158,7 @@ main{}
     /* ÁREA DE DESTAQUE */
     .secaoDestaque {
         width: 100vw;
-        height: 46vh;
+        height: 50vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -167,6 +167,7 @@ main{}
         
     }
         .secaoDestaque h2 {
+            max-width: 90%;
             color: #fff;
             font-size: 43px;
             font-weight: 500;
@@ -183,7 +184,8 @@ main{}
 
         /* FORMULÁRIO */
         .secaoDestaqueFormulario {
-            margin-top: 10px;
+            margin-top: 2vh;
+            margin-bottom: 5vh;
             border-radius: 20px;
         }
 
@@ -237,8 +239,6 @@ main{}
 
             }   
                
-            
-
                 div.flex-col {
                     /* background-color: indigo; */
                     padding: 50px;
@@ -265,7 +265,7 @@ main{}
                         /* background-color: darkorange; */
                     }
                     div.flex-col button {
-                        width: 40vh;
+                        width: 100%;
                         height: 7vh;
                         text-align: center;
                         align-items: center;
@@ -290,15 +290,31 @@ main{}
                 width: 100%;
                 display: flex;
                 flex-direction: column;
-                /* justify-content:space-between; */
                 background-color: #ebebeb;
             }
 
+                div#js div.flex-col {
+                    padding-top: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                    div#js div.flex-col figure {
+                        padding-top: 10vh;
+                    }
+
+                    div#js div.flex-col ul{
+                        width: 60%;
+                    }
                     div.flex-col figure img#js-flex-col {
                         width: 50%;
                     }
 
                     div#js div.flex-col h2{
+                        /* padding: 0; */
+                        width: 70%;
                         text-align: center;
                     }
                     div#js div.flex-col ul li{
@@ -323,12 +339,32 @@ main{}
   
 
 /* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {
+    @media screen and (min-width: 550px) {
 
         body {
-            background-color: greenyellow;
+            /* background-color: greenyellow; */
         }
 
+            nav#menu img {
+                display: none;
+            }
+            
+            nav#menu ul#links {
+                display: flex;
+                /* flex-direction: row; */
+                justify-content: space-between;
+                
+            }
+
+                        nav#menu ul#links li a {
+                            margin: 20px;
+                            font-family: Montserrat;
+                            font-size: 19px;
+                            letter-spacing: .2rem;
+                            color: #fff;
+                            text-decoration: none;
+                        }
+            
         .secaoDestaque {
             background-image: url(/assets/img/background-destaque.webp) ;
             background-size: cover;
