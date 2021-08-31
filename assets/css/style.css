@@ -1,4 +1,3 @@
-
 /*
 Theme Name: Landing Page Kenzie Academy
 Theme URI: https://kenzie.com.br/
@@ -7,7 +6,6 @@ Author URI: https://kenzie.com.br/
 Description: Descrção do thema.
 Version: 1.0
 Text Domain: https://kenzie.com.br/
-
 --------------------------------------------
 ESTRUTURAÇÃO BASE
 --------------------------------------------
@@ -19,7 +17,6 @@ ESTRUTURAÇÃO BASE
 **** PÁGINA INICIAL
 **** EXTRAS
 **** @MEDIA
-
 family=Montserrat -> Menus
 family=Lato -> Títulos, textos
 */
@@ -39,9 +36,20 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     font-family: sans-serif;
     list-style: none;
 }
+
+
 img{
     max-width: 80px;
 }
+
+h2 {
+    font-family: Montserrat;
+}
+
+figcaption {
+    display: none;
+}
+
 div.flex{
     display: flex;
 }
@@ -72,7 +80,71 @@ body{}
 /* BODY */
   
 /* HEADER */
-header{}
+header.topo {
+    border: 0;
+    height: 23vh;
+    width: 100vw;
+    background-color: #00043e; /* Azul escuro */
+    /* background-color: gold; */
+}
+
+    header.topo div.large-container{
+        display: flex;
+        /* background-color: fuchsia; */
+    }
+
+        header.topo div.large-container figure {
+            width: 50%;
+            height: 23vh;
+            /* background-color: greenyellow; */
+        }
+
+            div.large-container figure img {
+                padding: 3vw 3vh;
+                height: 18vh;
+            }
+
+            div.large-container figure figcaption {
+                display: none;
+            }
+
+    
+        nav#menu {
+            width: 50%;  
+            height: 23vh;
+            padding-right: 5vw;
+            display: flex;
+            flex-direction: row;
+            justify-content:flex-end;
+            align-items: center;
+            /* background-color: skyblue; */
+        }
+
+            nav#menu ul#links {
+                display: none;    
+            }
+
+                        nav#menu ul#links li a {
+                            margin: 20px;
+                            font-family: Montserrat;
+                            font-size: 19px;
+                            letter-spacing: .2rem;
+                            color: #fff;
+                            text-decoration: none;
+                        }
+            nav#menu img {
+                padding-right: 10px;
+                padding-bottom: 20px ;
+                margin: 0;
+                border: 0;
+                text-align: end;
+                display: block;
+                height: 50px;
+            }
+                
+
+
+
 /* HEADER */
   
 /* FOOTER */
@@ -356,6 +428,158 @@ div.flex a{
     text-decoration: none;
     color: #818181;
 }
+    
+    /* ÁREA DE DESTAQUE */
+    .secaoDestaque {
+        width: 100vw;
+        height: 46vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       background-color: #00043e;
+        
+    }
+        .secaoDestaque h2 {
+            color: #fff;
+            font-size: 43px;
+            font-weight: 500;
+            text-align: center;
+            
+        }
+        .secaoDestaque p {
+            margin: 20px;
+            color: #fff;
+            font-family: Montserrat;
+            font-size: 25px
+        }
+
+
+        /* FORMULÁRIO */
+        .secaoDestaqueFormulario {
+            margin-top: 10px;
+            border-radius: 20px;
+        }
+
+            .secaoDestaqueFormulario input {
+                padding-left: 10px;
+                height: 30px;
+                border: transparent;
+                width: 200px;
+                border-radius: 5px 0px 0px 5px ;
+            }
+
+            .secaoDestaqueFormulario button {
+                height: 30px;
+                border: 0;
+                /* border-left: 5px solid #007aff;; */
+                border-radius: 0px 5px 5px 0px;
+                color: #fff;
+                background-color: #007aff;
+            }
+
+    /* SEÇÃO SOBRE */
+
+    .secaoSobre {
+        width: 100vw;
+        /* height: 100vh; */
+        /* padding: 40px 10px; */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* background-color: red;    */
+    }
+
+        .flex{
+            width: 100vw;
+            /* height: 500px; */
+            /* display: flex; */
+            /* max-width: 1340px; */
+            /* align-items: center; */
+            /* justify-content: center; */
+            /* flex-direction: column; */
+            /* background-color: brown; */
+        }
+
+            div#python {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                /* justify-content:space-between; */
+                /* background-color: hotpink; */
+
+            }   
+               
+            
+
+                div.flex-col {
+                    /* background-color: indigo; */
+                    padding: 50px;
+                    /* width: 90vw; */
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+
+                    div.flex-col h2 {
+                        /* padding-top: 10vh; */
+                        padding-bottom: 5vh;
+                        /* background-color: darkorange; */
+                    }
+
+                    div.flex-col p {
+                        padding-bottom: 5vh;
+                        font-size: 1em;
+                        /* background-color: darkorange; */
+                    }
+                    div.flex-col span {
+                        padding-bottom: 5vh;
+                        font-size: 0.9em;
+                        color: #818181;
+                        /* background-color: darkorange; */
+                    }
+                    div.flex-col button {
+                        width: 40vh;
+                        height: 7vh;
+                        text-align: center;
+                        align-items: center;
+                        font-size: 0.7em;
+                        color: #000;
+                        border: 1px solid  #818181;
+                        border-radius: 5px;
+                    }
+                    
+
+                    div.flex-col figure{
+                        display: flex   ;
+                        align-items: center;
+                        justify-content: center;
+                   }
+                        
+                        div.flex-col figure img#python-flex-col {
+                            width: 80%;
+                        }
+
+            div#js {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                /* justify-content:space-between; */
+                background-color: #ebebeb;
+            }
+
+                    div.flex-col figure img#js-flex-col {
+                        width: 50%;
+                    }
+
+                    div#js div.flex-col h2{
+                        text-align: center;
+                    }
+                    div#js div.flex-col ul li{
+                        list-style: circle;
+                    }
+            
+
 /* INICIAL */
 
 /* EXTRAS */
@@ -489,3 +713,16 @@ div.flex a{
 
     }
 /* MEDIA QUERIES */
+        body {
+            
+        }
+
+        .secaoDestaque {
+            background-image: url(/assets/img/background-destaque.webp) ;
+            background-size: cover;
+            background-position: right ;
+        }
+
+    }
+  
+    
