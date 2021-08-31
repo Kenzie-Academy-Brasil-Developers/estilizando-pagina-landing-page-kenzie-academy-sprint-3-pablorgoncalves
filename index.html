@@ -169,7 +169,7 @@
       <ul class="calendario">
 
         <li>
-          <span class="calendario-data">22/02</span>
+          <div class="date"><span class="calendario-data">22/02</span></div>
           <h3>HTML/CSS</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur quae commodi sed eos repellendus adipisci architecto provident, et animi sapiente, rerum fugit quod voluptatum officia ipsum maxime nobis explicabo!</p>
           <div class="calendario-data-rodape">
@@ -179,7 +179,7 @@
         </li>
 
         <li>
-          <span class="calendario-data">23/02</span>
+          <div class="date"> <span class="calendario-data">23/02</span> </div>
           <h3>JavaScript</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur quae commodi sed eos repellendus adipisci architecto provident, et animi sapiente, rerum fugit quod voluptatum officia ipsum maxime nobis explicabo!</p>
           <div class="calendario-data-rodape">
@@ -189,7 +189,7 @@
         </li>
 
         <li>
-          <span class="calendario-data">24/02</span>
+          <div class="date"><span class="calendario-data">24/02</span></div>
           <h3>Python</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur quae commodi sed eos repellendus adipisci architecto provident, et animi sapiente, rerum fugit quod voluptatum officia ipsum maxime nobis explicabo!</p>
           <div class="calendario-data-rodape">
@@ -203,10 +203,15 @@
     </section>
 
     <section class="secaoContato">
-
+      <h2>Contact</h2>
       <div class="flex">
 
+        
+
         <!-- COLUNA LADO ESQUERDO -->
+
+        
+        
         <div class="flex-col">
           
           <div class="secaoContato-informacoes">
@@ -214,9 +219,9 @@
             <p>Contact us and we'll get back to you within 24 hours.</p>
             
             <ul>
-              <li><a href="#">Chicago, US</a> </li>
-              <li><a href="tel:001515151515">+00 1515151515</a></li>
-              <li><a href="malito:myemail@something.com">myemail@something.com</a></li>
+              <li><img class="icon" src="./assets/img/local.png"><a href="#">Chicago, US</a> </li>
+              <li><img class="icon" src="./assets/img/tel.png"><a href="tel:001515151515">+00 1515151515</a></li>
+              <li><img class="icon" src="./assets/img/email.png"><a href="malito:myemail@something.com">myemail@something.com</a></li>
             </ul>
 
           </div>
@@ -226,7 +231,7 @@
         <!-- COLUNA LADO DIRETO -->
         <div class="flex-col">
           
-          <h2>Contact</h2>
+          
           
           <form action="">
 
@@ -245,7 +250,7 @@
               <textarea name="mensagem" id="mensagem"></textarea>
             </div>
 
-            <input type="submit" value="Send">
+            <input type="submit" value="Send" id="inputSubmit">
 
           </form>
 

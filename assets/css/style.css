@@ -68,6 +68,11 @@ html{}
   
 /* BODY */
 body{}
+img {
+
+    height: 50px;
+    width: 50px;
+}
 /* BODY */
   
 /* HEADER */
@@ -80,6 +85,190 @@ footer{}
 
 /* INICIAL */
 main{}
+
+.secaoCalendar{
+
+
+}
+.secaoCalendar h2 {
+    margin: 0 auto;
+
+
+}
+.secaoCalendar ul{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+
+}
+
+.calendario li {
+
+    border: 1px solid #00043e;
+    margin: 0 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.date{
+    background-color: #00043e;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    margin:  0 0 20px 0;
+    
+}
+
+.calendario-data{
+    margin: auto auto;
+    color: #ffffff;
+    font-size: 36px;
+}
+.calendario li h3 {
+
+    margin: 0 auto 20px ;
+    font-size: 19px;
+
+}
+
+.calendario li p{
+
+    color:#818181;
+    text-align: center;
+    font-size: 15px;
+    margin: 0 5px 15px 5px;
+    line-height: 1.5;
+}
+
+.calendario-data-rodape{
+
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #818181;
+    
+   
+    
+}
+
+.calendario-data-rodape span{
+    font-size: 36px;
+    color:#818181;
+    margin: 20px 0 30px 0;
+}
+
+.calendario-data-rodape button {
+
+    background-color: #007aff;
+    border: none;
+    height: 50px;
+    width: 90%;
+    color: #ffffff;
+    font-size: 32px;
+    border-radius: 5px;
+
+}
+
+.secaoContato {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:azure
+
+}
+
+div.flex {
+    color: #818181;
+    font-size: 15px; 
+    width: 80%;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    
+}
+.secaoContato-informacoes{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 20px;
+    
+}
+.secaoContato-informacoes ul{
+    list-style: none;
+}
+
+.secaoContato-informacoes li{
+
+    margin: 10px 0 0 0;
+}
+.icon{
+    height: 0.8em;
+    width: 0.8em;
+    margin: 0 5px 0 0;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+     
+}
+
+
+
+.secaoContato h2{
+    color: #303030;
+    margin: 0 0 15px 0;
+    
+}
+.flex-col label{
+    display: none;
+}
+  
+#nome {
+    border: 1px solid #818181;
+    border-radius: 2px;
+    width: 100%;
+    height: 25px;
+    opacity: 50%;
+    margin: 0 0 10px 0;   
+}
+#email{
+    border: 1px solid #818181;
+    border-radius: 2px;
+    width: 100%;
+    height: 25px;
+    opacity: 50%;
+    margin: 0 0 10px 0;   
+}
+#mensagem{
+    border: 1px solid #818181;
+    border-radius: 2px;
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+    opacity: 50%;
+    margin: 0 0 10px 0;   
+}
+
+#inputSubmit {
+
+    width: 20%;
+    margin-left: 80%;   
+}
+.flex-col form {
+       display: flex;
+       flex-direction: column;
+}
+div.flex a{
+    text-decoration: none;
+    color: #818181;
+}
 /* INICIAL */
 
 /* EXTRAS */
@@ -97,7 +286,98 @@ main{}
   
 
 /* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {}
+    @media screen and (min-width: 400px) {
+
+        .calendario li {
+
+            width: 240px;
+        }
+
+
+        div.flex {
+        
+           
+            
+        }
+
+        .flex-col{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            
+             
+        }
+    }
   
-    @media screen and (min-width: 800px) {}
+    @media screen and (min-width: 800px) {
+
+        .secaoCalendar{
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        
+        .secaoCalendar ul{
+
+            flex-direction: row;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .calendario li {
+
+            width: 240px;
+            margin: 0 15px 50px 15px;
+        }
+
+        div.flex {
+            flex-direction: row;
+            width: 800px;
+            
+        }
+        
+        .secaoContato {
+
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .secaoContato h2{
+            color: #303030;
+            margin: 30px auto;
+            display: block;
+        }
+
+        .form-input-model:nth-child(1){
+
+            grid-area: name;
+            margin: 0 5px 10px 0;
+        }
+        .form-input-model:nth-child(2){
+        
+            grid-area: email;
+            margin: 0 0 10px 5px;
+        }
+        
+        .form-input-model:nth-child(3){
+            grid-area: mensagem;
+            margin: 0 0 30px 0;
+            
+        }
+        #inputSubmit {
+        
+            grid-area: send;
+            width: 10%;
+            margin-left: 90%;   
+        }
+        .flex-col form {
+               display: grid;
+               grid-template-areas: 
+               "name email"
+               "mensagem mensagem"
+               "send send";
+        }
+
+    }
 /* MEDIA QUERIES */
