@@ -86,27 +86,22 @@ header.topo {
     width: 100vw;
     background-color: #00043e;
 }
-
     header.topo div.large-container{
         display: flex;
     }
-
         header.topo div.large-container figure {
             width: 50%;
             height: 23vh;
         }
-
-            div.large-container figure img {
+            header.topo div.large-container figure img {
                 padding: 3vw 3vh;
                 height: 18vh;
             }
-
-            div.large-container figure figcaption {
+            header.topo div.large-container figure figcaption {
                 display: none;
             }
-
     
-        nav#menu {
+        header.topo div.large-container nav#menu {
             width: 50%;  
             height: 23vh;
             padding-right: 5vw;
@@ -123,6 +118,7 @@ header.topo {
                         nav#menu ul#links li a {
                             display: none;
                         }
+            
             nav#menu img {
                 padding-right: 10px;
                 padding-bottom: 20px ;
@@ -132,12 +128,10 @@ header.topo {
                 display: block;
                 height: 50px;
             }
-                
-
-
-
 /* HEADER */
-  
+
+
+
 /* FOOTER */
 footer{}
 
@@ -442,23 +436,19 @@ div.flex a{
         .flex{
             width: 100vw;
         }
-
             div#python {
                 width: 100%;
                 display: flex;
                 flex-direction: column;
             }   
-               
                 div.flex-col {
                     padding: 50px;
                     display: flex;
                     flex-wrap: wrap;
                 }
-
                     div.flex-col h2 {
                         padding-bottom: 5vh;
                     }
-
                     div.flex-col p {
                         padding-bottom: 5vh;
                         font-size: 1em;
@@ -471,19 +461,21 @@ div.flex a{
                     div.flex-col button {
                         width: 100%;
                         height: 7vh;
+                        font-size: 1em;
                         text-align: center;
                         align-items: center;
-                        font-size: 0.7em;
+                        /* font-size: 3em; */
                         color: #000;
                         border: 1px solid  #818181;
                         border-radius: 5px;
                     }
-                    div.flex-col figure{
+                    div.flex-col figure {
                         display: flex   ;
                         align-items: center;
                         justify-content: center;
                    }   
                         div.flex-col figure img#python-flex-col {
+                            overflow: hidden;   
                             height: 20vh;
                         }
 
@@ -493,15 +485,13 @@ div.flex a{
                 flex-direction: column;
                 background-color: #ebebeb;
             }
-
-                    div.flex-col figure img#js-flex-col {
+                    div#js div.flex-col figure img#js-flex-col {
                         width: 200px
                     }
-
-                    div#js div.flex-col h2{
+                    div#js div.flex-col h2 {
                         text-align: center;
                     }
-                    div#js div.flex-col ul li{
+                    div#js div.flex-col ul li {
                         list-style: circle;
                     }
             
@@ -525,16 +515,13 @@ div.flex a{
 /* MEDIA QUERIES */
     @media screen and (min-width: 400px) {
         header.topo {
-            /* border: 0; */
             height: 18vh;
             width: 100vw;
             background-color: #00043e;
             background-image: none;
         }
             header.topo div.large-container {
-                /* background-color: chartreuse; */
                 height: 11vh;
-            
             }
             header.topo div.large-container figure {
                 width: 50%;
@@ -543,7 +530,6 @@ div.flex a{
                         div.large-container figure img {
                             padding: 3vw 3vh;
                             height: 10vh;
-                            /* background-color: blue; */
                         }
 
         nav#menu {
@@ -560,7 +546,6 @@ div.flex a{
             display: flex;
             justify-content: space-between;
         }
-
                     nav#menu ul#links li a {
                         margin: 20px;
                         font-family: Montserrat;
@@ -576,30 +561,37 @@ div.flex a{
             .secaoDestaqueFormulario button {
                 height: 30px;
                 border: 0;
-                /* border-left: 5px solid #007aff;; */
                 border-radius: 0px 5px 5px 0px;
                 color: #fff;
                 background-color: #007aff;
             }
         
-        .secaoSobre {
-        
-           
-                background-color: darkred;
-        }
-        article.flex {
+            .secaoSobre {
+                width: 100vw;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            .flex{
+                width: 100vw;
+            }
 
-        }
+            div.flex-col button {
+                max-width: 50vw;
+                width: 100%;
+                height: 7vh;
+                text-align: center;
+                align-items: center;
+                font-size: 1em;
+                color: #000;
+                border: 1px solid  #818181;
+                border-radius: 5px;
+            }
 
-        #python {
-            height: 50vh;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
 
 
-        
+
         .secaoCursos{
             width: 400px;
         }
@@ -633,14 +625,12 @@ div.flex a{
     @media screen and (min-width: 800px) {
 
         header.topo {
-            /* border: 0; */
             height: 13vh;
             width: 100vw;
             background-color: #00043e;
             background-image: none;
         }
             header.topo div.large-container {
-                /* background-color: darkorange; */
                 height: 13vh;
             
             }
@@ -651,29 +641,23 @@ div.flex a{
                         div.large-container figure img {
                             padding: 1vw 1vh;
                             height: 10vh;
-                            /* background-color: blue;   */
                         }
 
         nav#menu {
             height: 13vh;
         }
 
-        nav#menu img {
-            padding-bottom: 9vh;
-            padding-right: 1vw;
-            display: block;
-        }
         
         nav#menu ul#links {
             display: flex;
             justify-content: space-between;
         }
-
                     nav#menu ul#links li a {
+                        display: block;
                         margin: 20px;
                         font-family: Montserrat;
                         font-size: 19px;
-                        letter-spacing: .2rem;
+                        letter-spacing: 0.1rem;
                         color: #fff;
                         text-decoration: none;
                     }
@@ -682,39 +666,93 @@ div.flex a{
             display: none;
         }
         
-        nav#menu ul#links {
-            display: flex;
-            /* flex-direction: row; */
-            justify-content: space-between;
-            
-        }
-                    nav#menu ul#links li a {
-                        display: block;
-                        margin: 20px;
-                        font-family: Montserrat;
-                        font-size: 17px;
-                        letter-spacing: .2rem;
-                        color: #fff;
-                        text-decoration: none;
-                    }
+
         
         
         .secaoDestaque {
+            width: 100vw;
             height: 87vh;
             background-image: url(/assets/img/background-destaque.webp) ;
             background-size: cover;
             background-position: right ;
         }
         .secaoDestaqueFormulario button {
+            
             height: 30px;
             border: 0;
-            /* border-left: 5px solid #007aff;; */
             border-radius: 0px 5px 5px 0px;
             color: #fff;
             background-color: #007aff;
         }
 
+        .inicial {
+            justify-content: center;
+        }
 
+        .secaoSobre {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .flex{
+                width: 100vw;
+            }
+            div#python {
+                width: 100%;
+                min-height: 400px;
+                display: flex;
+                flex-direction: row;
+                background-color: honeydew;
+            }
+
+                div#python div.flex-col {
+                    
+                    width: 50vw;
+                    height: 400px;
+                    min-height: 300px;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                div#python div.flex-col h2 {
+                    padding-bottom: 2vh ;
+                    width: 100%;
+                }
+                div#python div.flex-col p {
+                    padding-bottom: 2vh ;
+                    width: 100%;
+                }
+                div#python div.flex-col span {
+                    padding-bottom: 1vh ;
+                    width: 100%;
+                }
+                div#python div.flex-col button {
+                    font-size: 1.3em;
+                    max-width: 30vw;
+                    width: 100%;
+                }
+                div#python div.flex-col figure{
+                    display: flex   ;
+                    align-items: center;
+                    justify-content: center;
+            }   
+                    div#python div.flex-col figure img#python-flex-col {
+                        padding-top: 4vh;
+                        height: 20vh;
+                    }
+
+
+            div#js {
+                width: 100%;
+                height: 50vh;
+                display: flex;
+                flex-direction: row;
+                background-color: #ebebeb;
+            }
+
+
+        /*  */
+/*  */
 
                     
         .secaoCursos{
