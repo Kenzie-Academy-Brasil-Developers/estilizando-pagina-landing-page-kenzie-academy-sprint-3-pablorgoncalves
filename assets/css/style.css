@@ -139,6 +139,7 @@ footer p{
     width: 40%;
     margin: 0 auto;
     color: #818181;
+    text-align: center;
 }
 
 footer a{
@@ -267,7 +268,7 @@ main{}
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-top: 1px solid #818181;
+    border-top: 1px solid #999999;
 }
 
 .calendario-data-rodape span{
@@ -286,13 +287,19 @@ main{}
     border-radius: 5px;
 }
 
+.calendario-data-rodape button:hover {
+
+    background-color: #00043e;
+
+}
+
 .secaoContato {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color:#ebebeb;
-    padding: 0 0 30px 0;
+    padding: 0 10px 30px 10px;
 }
 
 div.flex {
@@ -327,10 +334,16 @@ div.flex {
 }
 .secaoContato h2{
     color: #303030;
-    margin: 0 0 15px 0;
+    margin: 60px 0 40px 0;
+    text-transform: uppercase;
+    
 }
 .flex-col-contact label{
     display: none;
+}
+
+.flex-col-contact form input:hover {
+    background-color: #cccccc;
 }
   
 #nome {
@@ -358,6 +371,11 @@ div.flex {
     opacity: 50%;
     margin: 0 0 10px 0;   
 }
+#mensagem:hover {
+
+    background-color: #cccccc;
+}
+
 
 #inputSubmit {
     width: 20%;
@@ -366,6 +384,13 @@ div.flex {
     border-radius: 2px;
     background-color: #ffffff;
     margin: 0 0 0 80%;
+}
+
+#inputSubmit:hover {
+
+    background-color: #818181;
+    color: #ffffff;
+
 }
 .flex-col-contact form {
        display: flex;
