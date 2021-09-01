@@ -39,7 +39,7 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
 
 
 img{
-    max-width: 80px;
+    
 }
 
 h2 {
@@ -154,6 +154,7 @@ footer p{
     width: 40%;
     margin: 0 auto;
     color: #818181;
+    text-align: center;
 }
 
 footer a{
@@ -331,14 +332,20 @@ main{}
 
 }
 
+.calendario-data-rodape button:hover {
+
+    background-color: #00043e;
+
+}
+
 .secaoContato {
 
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:azure
-
+    background-color:#ebebeb;
+    padding: 0 0 20px 0;
 }
 
 div.flex {
@@ -354,6 +361,7 @@ div.flex {
     display: flex;
     flex-direction: column;
     margin: 0 auto 20px;
+    padding: 0;
     
 }
 .secaoContato-informacoes ul{
@@ -369,19 +377,33 @@ div.flex {
     width: 0.8em;
     margin: 0 5px 0 0;
 }
-.flex-col{
+     
+}
+.flex-col-contact{
+
     display: flex;
     flex-direction: column;
     width: 100%;
-     
 }
-.secaoContato h2{
+
+
+#contatoH2{
     color: #303030;
-    margin: 0 0 15px 0;
+    margin: 0 0 30px 0px; 
+    text-transform: uppercase;
+    padding: 0;
     
 }
-.flex-col label{
+.flex-col-contact label{
     display: none;
+}
+.flex-col-contact form input:hover {
+    background-color: #cccccc;
+}
+#mensagem:hover {
+
+    background-color: #cccccc;
+
 }
   
 #nome {
@@ -420,6 +442,14 @@ div.flex {
     margin: 0 0 0 80%;
     
 }
+
+#inputSubmit:hover {
+
+    background-color: #818181;
+    color: #ffffff;
+
+}
+
 .flex-col form {
        display: flex;
        flex-direction: column;
@@ -622,10 +652,11 @@ div.flex a{
             width: 240px;
         }
 
-        .flex-col{
+        .flex-col-contact{
             display: flex;
             flex-direction: column;
-            width: 100%;   
+            width: 100%;
+            
         }
     }
   
@@ -675,8 +706,8 @@ div.flex a{
             width: 100%;
             margin: 0 auto;
         }
-        .secaoContato h2{
-            color: #303030;
+        #contatoH2{
+                       
             margin: 30px auto;
             padding:  0 0 0 15%;
         }
@@ -703,7 +734,7 @@ div.flex a{
             
               
         }
-        .flex-col form {
+        .flex-col-contact form {
                display: grid;
                grid-template-areas: 
                "name email"
