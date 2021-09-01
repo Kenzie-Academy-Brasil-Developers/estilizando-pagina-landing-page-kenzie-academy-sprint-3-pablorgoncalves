@@ -291,7 +291,8 @@ main{}
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:azure
+    background-color:#ebebeb;
+    padding: 0 0 30px 0;
 }
 
 div.flex {
@@ -319,7 +320,7 @@ div.flex {
     width: 0.8em;
     margin: 0 5px 0 0;
 }
-.flex-col{
+.flex-col-contact{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -328,7 +329,7 @@ div.flex {
     color: #303030;
     margin: 0 0 15px 0;
 }
-.flex-col label{
+.flex-col-contact label{
     display: none;
 }
   
@@ -366,7 +367,7 @@ div.flex {
     background-color: #ffffff;
     margin: 0 0 0 80%;
 }
-.flex-col form {
+.flex-col-contact form {
        display: flex;
        flex-direction: column;
 }
@@ -698,7 +699,7 @@ div.flex a{
                 min-height: 400px;
                 display: flex;
                 flex-direction: row;
-                background-color: honeydew;
+                
             }
 
                 div#python div.flex-col {
@@ -821,7 +822,7 @@ div.flex a{
             
               
         }
-        .flex-col form {
+        .flex-col-contact form {
                display: grid;
                grid-template-areas: 
                "name email"
