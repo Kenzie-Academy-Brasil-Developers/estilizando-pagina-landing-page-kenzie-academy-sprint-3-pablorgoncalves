@@ -623,51 +623,46 @@ div.flex a{
     }
   
     @media screen and (min-width: 800px) {
-
+        /* HEADER */
         header.topo {
+            border: 0;
             height: 13vh;
             width: 100vw;
             background-color: #00043e;
             background-image: none;
         }
             header.topo div.large-container {
-                height: 13vh;
-            
-            }
-            header.topo div.large-container figure {
-                width: 50%;
+                display: flex;
                 height: 13vh;
             }
-                        div.large-container figure img {
-                            padding: 1vw 1vh;
-                            height: 10vh;
-                        }
-
-        nav#menu {
-            height: 13vh;
-        }
-
-        
-        nav#menu ul#links {
-            display: flex;
-            justify-content: space-between;
-        }
-                    nav#menu ul#links li a {
-                        display: block;
-                        margin: 20px;
-                        font-family: Montserrat;
-                        font-size: 19px;
-                        letter-spacing: 0.1rem;
-                        color: #fff;
-                        text-decoration: none;
+                header.topo div.large-container figure {
+                    width: 50%;
+                    height: 13vh;
+                }
+                    header.topo div.large-container figure img {
+                        padding: 1vh 2vw;
+                        max-height: 10vh;
+                    }
+                header.topo div.large-container nav#menu {
+                    height: 13vh;
+                }
+                    header.topo div.large-container nav#menu ul#links {
+                        display: flex;
+                        justify-content: space-between;
                     }
 
-        nav#menu img {
-            display: none;
-        }
-        
-
-        
+                        header.topo div.large-container nav#menu ul#links li a {
+                            display: block;
+                            margin: 20px;
+                            font-family: Montserrat;
+                            font-size: 19px;
+                            letter-spacing: 0.1rem;
+                            color: #fff;
+                            text-decoration: none;
+                        }
+                        header.topo div.large-container nav#menu img {
+                            display: none;
+                        }
         
         .secaoDestaque {
             width: 100vw;
@@ -836,10 +831,6 @@ div.flex a{
 
     }
 /* MEDIA QUERIES */
-        body {
-            
-        }
-
      
   
     
