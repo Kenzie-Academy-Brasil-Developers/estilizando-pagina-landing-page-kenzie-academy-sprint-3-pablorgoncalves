@@ -696,6 +696,11 @@ div.flex a{
             background-size: cover;
             background-position: right ;
         }
+
+        .secaoDestaque h2{
+            font-size: 63px;
+        }
+
         .secaoDestaqueFormulario button {
             
             height: 30px;
