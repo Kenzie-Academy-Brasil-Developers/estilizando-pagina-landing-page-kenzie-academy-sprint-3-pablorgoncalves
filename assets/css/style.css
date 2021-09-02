@@ -82,7 +82,7 @@ body{}
 /* HEADER */
 header.topo {
     border: 0;
-    height: 23vh;
+    height: 16vh;
     width: 100vw;
     background-color: #00043e;
 }
@@ -95,7 +95,7 @@ header.topo {
         }
             header.topo div.large-container figure img {
                 padding: 3vw 3vh;
-                height: 18vh;
+                height: 13vh;
             }
             header.topo div.large-container figure figcaption {
                 display: none;
@@ -121,7 +121,7 @@ header.topo {
             
             nav#menu img {
                 padding-right: 10px;
-                padding-bottom: 20px ;
+                padding-bottom: 70px ;
                 margin: 0;
                 border: 0;
                 text-align: end;
@@ -490,7 +490,6 @@ div.flex a{
                         font-size: 1em;
                         text-align: center;
                         align-items: center;
-                        /* font-size: 3em; */
                         color: #000;
                         border: 1px solid  #818181;
                         border-radius: 5px;
@@ -693,7 +692,7 @@ div.flex a{
         .secaoDestaque {
             width: 100vw;
             height: 87vh;
-            background-image: url(/assets/img/background-destaque.webp) ;
+            background-image: url(https://kenzie-academy-brasil-developers.github.io/estilizando-pagina-landing-page-kenzie-academy-sprint-3-pablorgoncalves/assets/img/background-destaque.webp) ;
             background-size: cover;
             background-position: right ;
         }
