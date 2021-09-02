@@ -467,24 +467,24 @@ div.flex a{
                 display: flex;
                 flex-direction: column;
             }   
-                div.flex-col {
+                div.flex-cola1 {
                     padding: 50px;
                     display: flex;
                     flex-wrap: wrap;
                 }
-                    div.flex-col h2 {
+                    div.flex-cola1 h2 {
                         padding-bottom: 5vh;
                     }
-                    div.flex-col p {
+                    div.flex-cola1 p {
                         padding-bottom: 5vh;
                         font-size: 1em;
                     }
-                    div.flex-col span {
+                    div.flex-cola1 span {
                         padding-bottom: 5vh;
                         font-size: 0.9em;
                         color: #818181;
                     }
-                    div.flex-col button {
+                    div.flex-cola1 button {
                         width: 100%;
                         height: 7vh;
                         font-size: 1em;
@@ -493,6 +493,7 @@ div.flex a{
                         color: #000;
                         border: 1px solid  #818181;
                         border-radius: 5px;
+                        background: transparent;
                     }
                     div.flex-col figure {
                         display: flex   ;
@@ -500,8 +501,9 @@ div.flex a{
                         justify-content: center;
                    }   
                         div.flex-col figure img#python-flex-col {
-                            overflow: hidden;   
-                            height: 20vh;
+                            /* overflow: hidden;    */
+                            margin-bottom: 5vh;
+                            height: 24vh;
                         }
 
             div#js {
@@ -511,10 +513,18 @@ div.flex a{
                 background-color: #ebebeb;
             }
                     div#js div.flex-col figure img#js-flex-col {
+                        margin-top: 10vh;
                         width: 200px
                     }
                     div#js div.flex-col h2 {
+                        margin-top: 10vh;
                         text-align: center;
+                    }
+                    div#js div.flex-col ul {
+                        margin-left: 20vw;
+                        margin-top: 10vh;
+                        margin-bottom: 10vh;
+                        width: 70%; 
                     }
                     div#js div.flex-col ul li {
                         list-style: circle;
@@ -602,8 +612,8 @@ div.flex a{
                 width: 100vw;
             }
 
-            div.flex-col button {
-                max-width: 50vw;
+            div.flex-cola1 button {
+                max-width: 30vw;
                 width: 100%;
                 height: 7vh;
                 text-align: center;
@@ -612,9 +622,10 @@ div.flex a{
                 color: #000;
                 border: 1px solid  #818181;
                 border-radius: 5px;
+                background: transparent;
             }
 
-
+           
 
 
         .secaoCursos{
@@ -715,6 +726,7 @@ div.flex a{
         }
 
         .secaoSobre {
+            
             flex-direction: row;
             justify-content: center;
             align-items: center;
@@ -722,39 +734,59 @@ div.flex a{
 
             .flex{
                 width: 100vw;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
             }
             div#python {
                 width: 100%;
+                height: 60vh;
                 min-height: 400px;
                 display: flex;
                 flex-direction: row;
-                
             }
 
                 div#python div.flex-col {
-                    
-                    width: 50vw;
+                    width: 100vw;
                     height: 400px;
                     min-height: 300px;
                     display: flex;
                     flex-wrap: wrap;
                 }
-                div#python div.flex-col h2 {
-                    padding-bottom: 2vh ;
+
+                div#python div.flex-cola1 {
+                    padding: 0;
+                }
+
+                div#python div.flex-cola1 h2 {
+                    padding: 0;
+                    margin-top: 10vh;
+                    margin-left: 7vw;
+                    margin-bottom: 3vh ;
+                    width: 100%;
+                    font-size: 1.4em;
+                    letter-spacing: -0.1rem;
+                    font-weight:500;
+                }
+                div#python div.flex-cola1 p {
+                    padding: 0;
+                    margin-left: 7vw;
+                    margin-bottom: 2vh ;
                     width: 100%;
                 }
-                div#python div.flex-col p {
-                    padding-bottom: 2vh ;
+                div#python div.flex-cola1 span {
+                    padding: 0;
+                    margin-left: 7vw;
+                    margin-bottom: 3vh ;
                     width: 100%;
                 }
-                div#python div.flex-col span {
-                    padding-bottom: 1vh ;
-                    width: 100%;
-                }
-                div#python div.flex-col button {
+                div#python div.flex-cola1 button {
+
+                    margin-left: 7vw;
                     font-size: 1.3em;
-                    max-width: 30vw;
+                    max-width: 12vw;
                     width: 100%;
+                    height: 2em;
                 }
                 div#python div.flex-col figure{
                     display: flex   ;
@@ -762,8 +794,8 @@ div.flex a{
                     justify-content: center;
             }   
                     div#python div.flex-col figure img#python-flex-col {
-                        padding-top: 4vh;
-                        height: 20vh;
+                        margin-top: 10vh;
+                        height: 40vh;
                     }
 
 
@@ -773,6 +805,19 @@ div.flex a{
                 display: flex;
                 flex-direction: row;
                 background-color: #ebebeb;
+            }
+            div#js h2 {
+                margin-right: 10vw;
+                /* background-color: yellow; */
+            }    
+            div#js div.flex-col ul {
+                margin-top: 5vh;
+                margin-left: 10vw;
+                margin-bottom: 10vh;
+                width: 70%; 
+            }
+            div#js img#js-flex-col {
+                background-color: yellow;
             }
 
 
