@@ -83,16 +83,18 @@ body{}
 /* HEADER */
 header.topo {
     border: 0;
-    height: 16vh;
+    height: 0px;
     width: 100vw;
     background-color: #00043e;
 }
     header.topo div.large-container{
+        
+        height: 13vh;
         display: flex;
     }
         header.topo div.large-container figure {
             width: 50%;
-            height: 23vh;
+            height: 13vh;
         }
             header.topo div.large-container figure img {
                 padding: 3vw 3vh;
@@ -104,12 +106,11 @@ header.topo {
     
         header.topo div.large-container nav#menu {
             width: 50%;  
-            height: 23vh;
+            height: 18vh;
             padding-right: 5vw;
             display: flex;
             flex-direction: row;
             justify-content:flex-end;
-            align-items: center;
         }
 
             nav#menu ul#links {
@@ -121,9 +122,8 @@ header.topo {
                         }
             
             nav#menu img {
-                padding-right: 10px;
-                padding-bottom: 70px ;
-                margin: 0;
+                margin-right: 15px;
+                margin-top: 15px;
                 border: 0;
                 text-align: end;
                 display: block;
@@ -405,7 +405,7 @@ div.flex a{
     /* ÁREA DE DESTAQUE */
     .secaoDestaque {
         width: 100vw;
-        height: 46vh;
+        height: 70vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -475,6 +475,7 @@ div.flex a{
                 }
                     div.flex-cola1 h2 {
                         padding-bottom: 5vh;
+                        font-size: 21px;
                     }
                     div.flex-cola1 p {
                         padding-bottom: 5vh;
@@ -502,32 +503,39 @@ div.flex a{
                         justify-content: center;
                    }   
                         div.flex-col figure img#python-flex-col {
-                            /* overflow: hidden;    */
                             margin-bottom: 5vh;
                             height: 24vh;
                         }
 
             div#js {
                 width: 100%;
+                
+                background-color: #ebebeb;
+            }
+            #limit{
                 display: flex;
                 flex-direction: column;
-                background-color: #ebebeb;
+                justify-content: center;
+                align-items: center;
+            }
+            .flex-col-js {
+                width: 60%;
+
             }
                     div#js div.flex-col figure img#js-flex-col {
                         margin-top: 10vh;
                         width: 200px
                     }
-                    div#js div.flex-col h2 {
+                    div#js div.flex-col-js h2 {
                         margin-top: 10vh;
                         text-align: center;
                     }
-                    div#js div.flex-col ul {
-                        margin-left: 20vw;
-                        margin-top: 10vh;
+                    div#js div.flex-col-js ul {
+                        margin-top: 5vh;
                         margin-bottom: 10vh;
-                        width: 70%; 
+                        width: 100%; 
                     }
-                    div#js div.flex-col ul li {
+                    div#js div.flex-col-js ul li {
                         list-style: circle;
                     }
             
@@ -551,13 +559,14 @@ div.flex a{
 /* MEDIA QUERIES */
     @media screen and (min-width: 400px) {
         header.topo {
-            height: 18vh;
+            height: 12vh;
             width: 100vw;
             background-color: #00043e;
             background-image: none;
         }
             header.topo div.large-container {
-                height: 11vh;
+                background-color: #00043e;
+                height: 13vh;
             }
             header.topo div.large-container figure {
                 width: 50%;
@@ -568,8 +577,6 @@ div.flex a{
                             height: 10vh;
                             
                         }
-                        div.large-container figure img:hover {
-                        }
 
 
         nav#menu {
@@ -577,26 +584,12 @@ div.flex a{
         }
 
         nav#menu img {
-            padding-bottom: 9vh;
-            padding-right: 1vw;
             display: block;
         }
         
-        nav#menu ul#links {
-            display: flex;
-            justify-content: space-between;
-        }
-                    nav#menu ul#links li a {
-                        margin: 20px;
-                        font-family: Montserrat;
-                        font-size: 19px;
-                        letter-spacing: .2rem;
-                        color: #fff;
-                        text-decoration: none;
-                    }
 
         .secaoDestaque {
-            height: 87vh;
+            height: 81vh;
         }
             .secaoDestaqueFormulario button {
                 height: 30px;
@@ -669,7 +662,7 @@ div.flex a{
         /* HEADER */
         header.topo {
             border: 0;
-            height: 13vh;
+            height: 12vh;
             width: 100vw;
             background-color: #00043e;
             background-image: none;
@@ -691,15 +684,19 @@ div.flex a{
                 }
                     header.topo div.large-container nav#menu ul#links {
                         display: flex;
-                        justify-content: space-between;
+                        align-items: center;
+                        margin-right: 50px;
+                        
+                        justify-content:space-between;
+
                     }
 
                         header.topo div.large-container nav#menu ul#links li a {
-                            display: block;
                             margin: 20px;
+                            letter-spacing: .2rem;
+                            display: block;
                             font-family: Montserrat;
                             font-size: 13px;
-                            letter-spacing: 0.1rem;
                             color: #fff;
                             text-decoration: none;
                         }
@@ -724,7 +721,6 @@ div.flex a{
         }
 
         .secaoDestaqueFormulario button {
-            
             height: 30px;
             border: 0;
             border-radius: 0px 5px 5px 0px;
@@ -737,7 +733,6 @@ div.flex a{
         }
 
         .secaoSobre {
-            
             flex-direction: row;
             justify-content: center;
             align-items: center;
@@ -750,16 +745,16 @@ div.flex a{
                 flex-wrap: wrap;
             }
             div#python {
-                width: 87%;
+                width: 65%;
                 height: 63vh;
-                min-height: 400px;
+                min-height: 5vh;
                 display: flex;
                 flex-direction: row;
-                align-items: flex-start;
+                align-items: center;
             }
 
                 div#python div.flex-col {
-                    width: 100vw;
+                    width: 30vw;
                     height: 400px;
                     min-height: 300px;
                     display: flex;
@@ -767,48 +762,46 @@ div.flex a{
                 }
 
                 div#python div.flex-cola1 {
+                    max-height: 50vh;
                     padding: 0;
+                    width: 100vw;
                 }
 
                 div#python div.flex-cola1 h2 {
                     padding: 0;
-                    margin-top: 10vh;
-                    margin-left: 7vw;
+                    margin-top: 4vh;
                     margin-bottom: 3vh ;
                     width: 100%;
-                    font-size: 1.4em;
+                    font-size: 19px;
                     letter-spacing: -0.1rem;
                     font-weight:500;
                 }
                 div#python div.flex-cola1 p {
                     padding: 0;
-                    margin-left: 7vw;
                     margin-bottom: 2vh ;
                     width: 100%;
                 }
                 div#python div.flex-cola1 span {
                     padding: 0;
-                    margin-left: 7vw;
                     margin-bottom: 3vh ;
                     width: 100%;
                 }
                 div#python div.flex-cola1 button {
-
                     margin-left: 7vw;
-                    font-size: 1.3em;
+                    font-size: 14px;
                     max-width: 12vw;
                     width: 100%;
                     height: 2em;
                 }
                 div#python div.flex-col figure{
-                    display: flex   ;
+                    width: 250px;
+                    display: flex;
                     align-items: center;
                     justify-content: center;
             }   
                     div#python div.flex-col figure img#python-flex-col {
                         margin-top: 10vh;
                         height: 40vh;
-                        
                     }
 
 
@@ -817,11 +810,22 @@ div.flex a{
                 height: 50vh;
                 display: flex;
                 flex-direction: row;
+                justify-content: center;
                 background-color: #ebebeb;
             }
+            div#limit {
+                width: 70%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            .flex-col-js {
+                width: 100%;
+            }
             div#js h2 {
-                margin-right: 10vw;
-                
+                margin-right: 5vw;
+                font-size: 19px;
             }    
             div#js div.flex-col ul {
                 margin-top: 5vh;
@@ -829,9 +833,10 @@ div.flex a{
                 margin-bottom: 10vh;
                 width: 70%; 
             }
-            div#js img#js-flex-col {
-                background-color: yellow;
+            div#js div.flex-col figure img#js-flex-col{
+                margin: 0;
             }
+           
 
 
         /*  */
