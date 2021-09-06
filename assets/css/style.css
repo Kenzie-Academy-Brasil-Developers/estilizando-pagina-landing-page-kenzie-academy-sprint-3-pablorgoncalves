@@ -303,7 +303,7 @@ main{}
     padding: 0 10px 30px 10px;
 }
 
-div.flex {
+div.flex-contact {
     color: #818181;
     font-size: 15px; 
     width: 300px;
@@ -397,7 +397,7 @@ div.flex {
        display: flex;
        flex-direction: column;
 }
-div.flex a{
+div.flex-contact a{
     text-decoration: none;
     color: #818181;
 }
@@ -876,7 +876,7 @@ div.flex a{
             margin: 0 15px 50px 15px;
         }
 
-        div.flex {
+        div.flex-contact {
             flex-direction: row;
             width: 800px;
             
@@ -889,7 +889,7 @@ div.flex a{
         .secaoContato h2{
             color: #303030;
             margin: 30px auto;
-            padding:  0 0 0 15%;
+            padding:  0 0 0 150px;
         }
 
         .form-input-model:nth-child(1){
@@ -914,9 +914,14 @@ div.flex a{
             
               
         }
+       .flex-col-contact {
+        display: flex;
+        flex-direction: row;
+         width: 50%;
+        }
         .flex-col-contact form {
-               display: grid;
-               grid-template-areas: 
+          display: grid;
+          grid-template-areas: 
                "name email"
                "mensagem mensagem"
                "send send";
